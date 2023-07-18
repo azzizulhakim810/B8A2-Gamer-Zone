@@ -1,0 +1,22 @@
+/* Shared Style  */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+}
+:root {
+  --title-color:#0B0223;
+  --pink-color:#FF42A5;
+  --sky-blue-color:#4EC5F7;
+  --linear-title-color:linear-gradient( #F948B2, #8758F1);
+  --paragraph-color:#534C64;
+  --title-font-size:48px;
+  --title-font-weight:700;
+  --paragraph-font-size:18px;
+  --paragraph-font-weight:400;
+  --button-font-size:20px;
+  --button-font-weight:600;
+}
