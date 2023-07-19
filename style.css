@@ -1,4 +1,22 @@
 /* Shared Style  */
+
+:root {
+  --title-color:#0B0223;
+  --pink-color:#FF42A5;
+  --sky-blue-color:#4EC5F7;
+  --purple-color:#3C354F;
+  --white-color:#fff;
+  --background-color:#FFF9FC;
+  --linear-title-color:linear-gradient( #F948B2, #8758F1);
+  --paragraph-color:#534C64;
+  --title-font-size:48px;
+  --title-font-weight:700;
+  --paragraph-font-size:18px;
+  --paragraph-font-weight:400;
+  --button-font-size:16px;
+  --button-font-weight:600;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,22 +42,7 @@ li {
     text-transform: uppercase;
 }
 
-:root {
-  --title-color:#0B0223;
-  --pink-color:#FF42A5;
-  --sky-blue-color:#4EC5F7;
-  --purple-color:#3C354F;
-  --white-color:#fff;
-  --background-color:#FFF9FC;
-  --linear-title-color:linear-gradient( #F948B2, #8758F1);
-  --paragraph-color:#534C64;
-  --title-font-size:48px;
-  --title-font-weight:700;
-  --paragraph-font-size:18px;
-  --paragraph-font-weight:400;
-  --button-font-size:16px;
-  --button-font-weight:600;
-}
+
 
 /* Navbar Style  */
 header {
@@ -344,8 +347,14 @@ header {
 }
 
 /* Categories Section Style */
+
+.hidden-on-desktop {
+  display: none;
+}
+
 #games-categories-section {
 background-color: var(--background-color);
+margin-top: -80px;
 }
 .games-categories-section {
   width: 80%;
@@ -360,6 +369,7 @@ background-color: var(--background-color);
 }
 .games-category1{
   grid-template-columns: repeat(5,1fr);
+
 }
 .games-category2{
   grid-template-columns: repeat(4,1fr);
@@ -548,6 +558,47 @@ background-color: var(--background-color);
       }
 
 
+      /* Categories Section Style  */
+
+      .hidden-on-mobile-tablet {
+        display: none;
+      }
+      .show-only-mobile-tablet {
+        display: block;
+      }
+
+      .games-category-mobile{
+        display: grid;
+        gap: 15px;
+        margin-bottom: 20px;
+      }
+      .games-category-mobile{
+        grid-template-columns: repeat(3,1fr);
+      
+      }
+      .games-category-mobile button{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--white-color);
+        padding: 10px 10px;
+        font-size: 15px;
+        font-weight: var(--button-font-weight);
+        border: 2px solid var(--white-color);
+        color: var(--title-color);
+        border-radius: 100px;
+      }
+      .games-category-mobile button:hover{
+        border: 2px solid var(--pink-color);
+        color: var(--pink-color);
+        cursor: pointer;
+      }
+      .games-category-mobile button img{
+        width: 50px;
+        height: 50px;
+        padding-right: 10px;
+      }
+
     }
 
 
@@ -599,4 +650,26 @@ background-color: var(--background-color);
             grid-template-columns: repeat(1, 1fr);
             row-gap: 50px;
           }
+          
+          /* Categories Seciton  */
+          .hidden-on-mobile-tablet {
+            display: none;
+          }
+          .show-only-mobile-tablet {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+          }
+         
+          .games-category-mobile button{
+            display: inline-block;
+            padding: 10px 10px;
+            font-size: 13px;
+            border-radius: 10px;
+          }
+          
+          .games-category-mobile button img {
+            width: 40px;
+            height: 40px;
+          }
+          
         }
