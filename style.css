@@ -297,6 +297,95 @@ header {
   padding-top: 15px;
 }
 
+/* Play Instantly */
+#play-instantly-section {
+  width: 80%;
+  margin: auto;
+}
+.play-instantly-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+.play-instantly-text {
+  width: 50%;
+  margin-top: -20%;
+}
+.play-instantly-img {
+  width: 50%;
+}
+.play-instantly-img img {
+  width: 100%;
+}
+.play-instantly-img .short-image {
+  width:50%;
+  transform: translate(-40%, -70%);
+}
+.play-instantly-text {
+  text-align: right;
+  padding-right: 20%;
+}
+.play-instantly-text span {
+  background-color:var(--pink-color);
+ background-image: var(--linear-title-color);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.play-instantly-text h1, p {
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-weight);
+  color: var(--title-color);
+}
+.play-instantly-text p {
+  font-size: var(--paragraph-font-size);
+  font-weight: var(--paragraph-font-weight);
+  color: var(--paragraph-color);
+}
+
+/* Categories Section Style */
+#games-categories-section {
+background-color: var(--background-color);
+}
+.games-categories-section {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+  text-align: center;
+}
+.games-category1, .games-category2{
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.games-category1{
+  grid-template-columns: repeat(5,1fr);
+}
+.games-category2{
+  grid-template-columns: repeat(4,1fr);
+}
+.games-category1 button, .games-category2 button{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--white-color);
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: var(--button-font-weight);
+  border: 2px solid var(--white-color);
+  color: var(--title-color);
+  border-radius: 100px;
+}
+.games-category1 button:hover, .games-category2 button:hover{
+  border: 2px solid var(--pink-color);
+  color: var(--pink-color);
+  cursor: pointer;
+}
+.games-category1 button img, .games-category2 button img{
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+}
 
 
 
@@ -430,6 +519,32 @@ header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 50px;
+      }
+
+      /* Play Instantly Section Style  */
+      .play-instantly-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: ;
+      }
+      .play-instantly-text {
+        width: 100%;
+        margin-top: 0;
+        padding: 50px 0;
+      }
+      .play-instantly-text {
+        text-align: center;
+        padding-right: 0;
+      }
+      .play-instantly-text p{
+        padding: 20px 0px;
+      }
+      .play-instantly-img {
+        width: 100%;
+      }
+      .play-instantly-img img {
+        width: 100%;
       }
 
 
