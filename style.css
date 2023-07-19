@@ -5,11 +5,23 @@
 }
 body {
   font-family: 'Lato', sans-serif;
-  font-family: 'Work Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
 }
 
 li {
   list-style: none;
+}
+
+.button-style {
+    font-size: var(--button-font-size);
+    font-weight: var(--button-font-weight);
+    color: var(--white-color);
+    padding: 13px 26px;
+    border: 0;
+    border-radius: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 :root {
@@ -18,10 +30,11 @@ li {
   --sky-blue-color:#4EC5F7;
   --purple-color:#3C354F;
   --white-color:#fff;
+  --background-color:#FFF9FC;
   --linear-title-color:linear-gradient( #F948B2, #8758F1);
   --paragraph-color:#534C64;
   --title-font-size:48px;
-  --title-font-weight:600;
+  --title-font-weight:700;
   --paragraph-font-size:18px;
   --paragraph-font-weight:400;
   --button-font-size:16px;
@@ -98,7 +111,7 @@ header {
   width: 80%;
   margin: auto;
   height: 70vh;
-  padding: 20px 0;
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -112,7 +125,7 @@ header {
 
 .hero-section h2 {
   font-size: var(--title-font-size);
-  font-weight: var(--title-font-weight);
+  font-weight: 600;
   color: var(--title-color);
 }
 .hero-section h1 {
@@ -134,16 +147,7 @@ header {
   padding:8px 10px 8px 0px;
   color: var(--pink-color);
 }
-.sign-in, .go-rogue {
-  font-size: var(--button-font-size);
-  font-weight: var(--button-font-weight);
-  color: var(--white-color);
-  padding: 13px 26px;
-  border: 0;
-  border-radius: 100px;
-  margin-top: 20px;
-  cursor: pointer;
-}
+
 .sign-in {
   background-color: var(--pink-color);
 }
@@ -151,19 +155,194 @@ header {
   background-color: var(--sky-blue-color);
   margin-left: 10px;
 }
-
-
-
-
-
-
-
+.banner-text {
+  width: 55%;
+}
 .banner-img {
-  width: 40%;
+  width: 45%;
+  text-align: right;
 }
 .banner-img img{
   width: 100%;
+  max-width: 500px;
+  height: auto;
 }
+
+/* We are Gamers Section Style  */
+#gamer-section {
+  background-color: var(--background-color);
+}
+.gamer-section {
+  width: 80%;
+  padding: 100px 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gamer-img {
+  width: 60%;
+}
+.gamer-img img{
+  width: 100%;
+}
+.gamer-text {
+  width: 40%;
+  text-align: right;
+}
+.gamer-text h1 {
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-weight);
+  color: var(--title-color);
+  background-color:var(--pink-color);
+ background-image: var(--linear-title-color);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.gamer-text > p {
+  font-size: var(--paragraph-font-size);
+  font-weight: var(--paragraph-font-weight);
+  color: var(--paragraph-color);
+  padding: 15px 0;
+}
+.gamer-text button {
+  background-color: var(--pink-color);
+  margin-bottom:10px;
+}
+.gamer-text h4 {
+  font-size: 23px;
+  font-weight: 700;
+  color: var(--paragraph-color);
+}
+
+/* Online Games  */
+#online-games-section {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0;
+}
+.online-games-title {
+  text-align: center;
+  padding: 30px 0;
+}
+.online-games-title h1 {
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-weight);
+  color: var(--title-color);
+}
+.online-games-title span {
+  background-color:var(--pink-color);
+  background-image: var(--linear-title-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.online-games-title p, .cards p {
+ font-size: var(--paragraph-font-size);
+ font-weight: var(--paragraph-font-weight);
+ color: var(--paragraph-color);
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.cards img {
+  width: 100%;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.card:hover img {
+  filter: contrast(10%);
+}
+
+.card {
+  position: relative;
+}
+.hover-content {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.card:hover .hover-content {
+  opacity: 1;
+}
+.hover-text {
+  font-size: 20px;
+  font-weight: var(--button-font-weight);
+  color: var(--pink-color);
+  cursor: pointer;
+}
+.hover-text i{
+  font-size: 40px;
+  color: var(--white-color);
+  padding-bottom: 10px;
+}
+.hover-text button {
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 0;
+  background-color: var(--pink-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+.card p {
+  padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Query Applied  */
 
@@ -190,7 +369,7 @@ header {
         display: flex;
         flex-direction: column-reverse;
         height: auto;
-     
+        justify-content: center;
       }
       #hero-section {
         background-image: url(/images/Group\ 14.png);
@@ -199,9 +378,13 @@ header {
         background-repeat: no-repeat;
       }
 
+      .banner-text {
+        width: 100%;
+        padding-left: 50%;
+        padding-bottom: 50px;
+      }
       .banner-img {
-        width: 80%;
-        margin: auto;
+        width: 100%;
         text-align: center;
       }
       .banner-img img{
@@ -210,6 +393,45 @@ header {
       .banner-text {
         margin-top: 50px;
       }
+
+      /* Gamer Section Style  */
+      .gamer-section {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+      }
+      .gamer-img {
+        width: 100%;
+      }
+      .gamer-img img{
+        width: 100%;
+      }
+      .gamer-text {
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Online Games Section Style  */
+      #online-games-section {
+        padding: 20px 0;
+      }
+      .online-games-section {
+        text-align: center;
+      }
+      .online-games-title h1{
+        padding-bottom: 10px;
+        width: 70%;
+        margin: auto;
+      }
+      .online-games-title {
+        padding-bottom: 50px;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 50px;
+      }
+
 
     }
 
@@ -234,10 +456,32 @@ header {
           }
 
           /* Hero Section Style  */
+          .hero-section h2 {
+            font-size: 40px;
+          }
+          .hero-section h1 {
+            font-size: 80px;
+          }
+          
+          .banner-text {
+            width: 100%;
+            padding-left: 0%;
+            padding-bottom: 50px;
+          }
           .banner-img {
             width: 100%;
           }
           .banner-img img {
             width: 100%;
+          }
+
+          /* Online Games Section  */
+          .online-games-title h1{
+            width: 100%;
+          }
+          .cards {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 50px;
           }
         }
